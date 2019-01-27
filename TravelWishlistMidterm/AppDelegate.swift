@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Configure placestore
+        
+        let placeList = PlaceList()
+        
+        let tabcontroller = window!.rootViewController as! UITabBarController
+        let childControllers = tabcontroller.children
+        for child in childControllers {
+            if let cc = child as? MapViewController {
+                cc.placeList = placeList
+            }
+            
+            if let cc = child as? TravelWishlishViewController {
+                cc.placeList = placeList
+            }
+        }
+        
         return true
     }
 

@@ -14,6 +14,14 @@
 		E74785AA21FD03410013D125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74785A821FD03410013D125 /* LaunchScreen.storyboard */; };
 		E74785B521FD03410013D125 /* TravelWishlistMidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785B421FD03410013D125 /* TravelWishlistMidtermTests.swift */; };
 		E74785C021FD03410013D125 /* TravelWishlistMidtermUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785BF21FD03410013D125 /* TravelWishlistMidtermUITests.swift */; };
+		E74785CE21FD03F70013D125 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785CD21FD03F70013D125 /* MapViewController.swift */; };
+		E74785D021FD04030013D125 /* TravelWishlistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785CF21FD04030013D125 /* TravelWishlistController.swift */; };
+		E74785D221FD07B10013D125 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785D121FD07B10013D125 /* Place.swift */; };
+		E74785D421FD08210013D125 /* PlaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785D321FD08210013D125 /* PlaceList.swift */; };
+		E74785D721FD08E20013D125 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74785D621FD08E20013D125 /* MapKit.framework */; };
+		E74785DA21FD26EF0013D125 /* Geocoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785D921FD26EF0013D125 /* Geocoding.swift */; };
+		E74785DE21FD28410013D125 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785DD21FD28410013D125 /* PlaceAnnotation.swift */; };
+		E74785E021FD463D0013D125 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74785DF21FD463D0013D125 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,15 @@
 		E74785BB21FD03410013D125 /* TravelWishlistMidtermUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelWishlistMidtermUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74785BF21FD03410013D125 /* TravelWishlistMidtermUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelWishlistMidtermUITests.swift; sourceTree = "<group>"; };
 		E74785C121FD03410013D125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74785CD21FD03F70013D125 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E74785CF21FD04030013D125 /* TravelWishlistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelWishlistController.swift; sourceTree = "<group>"; };
+		E74785D121FD07B10013D125 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E74785D321FD08210013D125 /* PlaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceList.swift; sourceTree = "<group>"; };
+		E74785D621FD08E20013D125 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E74785D821FD26280013D125 /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
+		E74785D921FD26EF0013D125 /* Geocoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoding.swift; sourceTree = "<group>"; };
+		E74785DD21FD28410013D125 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		E74785DF21FD463D0013D125 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74785D721FD08E20013D125 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +95,12 @@
 		E747859321FD033D0013D125 = {
 			isa = PBXGroup;
 			children = (
+				E74785D821FD26280013D125 /* todo.md */,
 				E747859E21FD033D0013D125 /* TravelWishlistMidterm */,
 				E74785B321FD03410013D125 /* TravelWishlistMidtermTests */,
 				E74785BE21FD03410013D125 /* TravelWishlistMidtermUITests */,
 				E747859D21FD033D0013D125 /* Products */,
+				E74785D521FD08E20013D125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +117,19 @@
 		E747859E21FD033D0013D125 /* TravelWishlistMidterm */ = {
 			isa = PBXGroup;
 			children = (
+				E74785DF21FD463D0013D125 /* Colors.swift */,
+				E74785DD21FD28410013D125 /* PlaceAnnotation.swift */,
 				E747859F21FD033D0013D125 /* AppDelegate.swift */,
 				E74785A121FD033D0013D125 /* ViewController.swift */,
 				E74785A321FD033D0013D125 /* Main.storyboard */,
+				E74785CD21FD03F70013D125 /* MapViewController.swift */,
+				E74785CF21FD04030013D125 /* TravelWishlistController.swift */,
 				E74785A621FD03410013D125 /* Assets.xcassets */,
 				E74785A821FD03410013D125 /* LaunchScreen.storyboard */,
 				E74785AB21FD03410013D125 /* Info.plist */,
+				E74785D121FD07B10013D125 /* Place.swift */,
+				E74785D321FD08210013D125 /* PlaceList.swift */,
+				E74785D921FD26EF0013D125 /* Geocoding.swift */,
 			);
 			path = TravelWishlistMidterm;
 			sourceTree = "<group>";
@@ -123,6 +150,14 @@
 				E74785C121FD03410013D125 /* Info.plist */,
 			);
 			path = TravelWishlistMidtermUITests;
+			sourceTree = "<group>";
+		};
+		E74785D521FD08E20013D125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E74785D621FD08E20013D125 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74785DE21FD28410013D125 /* PlaceAnnotation.swift in Sources */,
+				E74785E021FD463D0013D125 /* Colors.swift in Sources */,
 				E74785A221FD033D0013D125 /* ViewController.swift in Sources */,
+				E74785CE21FD03F70013D125 /* MapViewController.swift in Sources */,
+				E74785D021FD04030013D125 /* TravelWishlistController.swift in Sources */,
+				E74785D421FD08210013D125 /* PlaceList.swift in Sources */,
 				E74785A021FD033D0013D125 /* AppDelegate.swift in Sources */,
+				E74785DA21FD26EF0013D125 /* Geocoding.swift in Sources */,
+				E74785D221FD07B10013D125 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
